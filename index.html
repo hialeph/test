@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다크 테마 테트리스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-board">
+          <canvas id="tetris" width="240" height="400"></canvas>
+        </div>
+        
+        <div class="game-info">
+          <div class="next-piece-container">
+            <h3>다음 블록</h3>
+            <canvas id="next-piece" width="120" height="120"></canvas>
+          </div>
+          
+          <div class="score-container">
+            <p>점수: <span id="score">0</span></p>
+            <p>레벨: <span id="level">1</span></p>
+            <p>줄 수: <span id="lines">0</span></p>
+          </div>
+          
+          <div class="controls">
+            <button id="start-btn">시작</button>
+            <button id="pause-btn">일시정지</button>
+          </div>
+        </div>
+      </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
